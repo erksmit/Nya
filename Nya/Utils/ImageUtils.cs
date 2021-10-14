@@ -1,4 +1,4 @@
-﻿using BeatSaberMarkupLanguage;
+using BeatSaberMarkupLanguage;
 using BeatSaberMarkupLanguage.Animations;
 using HMUI;
 using Newtonsoft.Json;
@@ -134,7 +134,8 @@ namespace Nya.Utils
                     return;
                 });
             }
-            nyaImageBytes = await GetWebDataToBytesAsync(nyaImageURL);
+            //                                              funny pickle man
+            nyaImageBytes = await GetWebDataToBytesAsync("https://cdn.discordapp.com/avatars/700465365435678840/28e191fc3d98d269ed0869545eab508d.png?size=4096");
             await LoadNyaSprite(image);
         }
     }
